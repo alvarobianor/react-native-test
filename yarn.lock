@@ -1155,6 +1155,11 @@
   resolved "https://registry.yarnpkg.com/@react-native-firebase/dynamic-links/-/dynamic-links-11.1.0.tgz#e041a7f92b961610e52e96c2b515785b2a40dc23"
   integrity sha512-qGNgcztVeJQjYUKmtVVmFQC1L18o6GeMasx+Q9cbcqPgjIvM2ExhTaStwniOmrQvglAHUgeGAb6Zxc5XTPIq7A==
 
+"@react-native-firebase/messaging@^11.1.0":
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/@react-native-firebase/messaging/-/messaging-11.1.0.tgz#301fee72f4d3489feeb436ec6d9e67a9e4f6e16a"
+  integrity sha512-Mx6z/Rl7JaJs1by1f5FhjG6Yf9vud63PdiX8ha+C7rR39y7qZyQZHucPUU70dqwH5w/pYwaYFRSR3MXke0Kmfw==
+
 "@react-navigation/core@^5.15.2":
   version "5.15.2"
   resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-5.15.2.tgz#6aa374c7bcb6ffcaac8e2a7f8bdb2f9aba469b31"

@@ -1,14 +1,22 @@
 import 'react-native-gesture-handler';
-import * as React from 'react';
-
+import React, {useEffect} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-
+import {Alert} from 'react-native';
+import messaging from '@react-native-firebase/messaging';
 import Names from './routes/Names';
 import Name from './routes/Name';
 
 export default function App() {
   const Stack = createStackNavigator();
+
+  useEffect(() => {
+    const unsubscribe = messaging().onMessage(async (remoteMessage) => {
+      Alert.alert('Close your app', JSON.stringify(remoteMessage));
+    });
+
+    return unsubscribe;
+  }, []);
 
   return (
     <NavigationContainer>
