@@ -11,3 +11,8 @@ export const Container = styled.View`
 export const MiniContainer = styled.View`
   margin-bottom: 20px;
 `;
+
+export const But = styled.Button`
+  margin-top: 20px;
+  background-color: tomato;
+`;
