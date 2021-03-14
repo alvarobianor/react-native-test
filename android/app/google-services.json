@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "883659514554",
+    "project_id": "reach-test-dea51",
+    "storage_bucket": "reach-test-dea51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883659514554:android:3e4105c3063965f0d85883",
+        "android_client_info": {
+          "package_name": "com.alvarobianorrn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883659514554-0s5lmcp35p3d4vh18dnj0jl8c6qv4i1b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alvarobianorrn",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "883659514554-66500e9upf2pfo6qs0034068ecalm44n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATRxIHp82xCYa1hCTa5b8hTNrqB49TIeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883659514554-66500e9upf2pfo6qs0034068ecalm44n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
