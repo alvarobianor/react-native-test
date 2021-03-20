@@ -27,7 +27,7 @@ export default function App() {
   useEffect(() => {
     const unsubscribe = messaging().onMessage(async (remoteMessage) => {
       Alert.alert(
-        'Close your app',
+        remoteMessage.notification?.title as string,
         JSON.stringify(remoteMessage.notification?.title),
       );
     });

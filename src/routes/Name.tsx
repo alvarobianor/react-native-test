@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import {Text, Button} from 'react-native';
+import {StatusBar, View} from 'react-native';
+import Button from '../styles/components/Button';
+
 import messaging from '@react-native-firebase/messaging';
 import * as S from '../styles/style';
 import api from '../api';
@@ -25,10 +27,22 @@ const Name = ({route}: any) => {
   }, []);
 
   return (
-    <S.Container>
-      <Text>{name}</Text>
-      <Button title="Notification" onPress={notification} />
-    </S.Container>
+    <>
+      <StatusBar barStyle="light-content" backgroundColor="#0C0C0D" />
+
+      <S.Container>
+        <S.ContainerWrapper>
+          <S.H1>This page is for:</S.H1>
+          <S.Padding />
+
+          <S.H3>{name}</S.H3>
+          <View>
+            <S.Padding />
+            <Button title="Notification" onPress={notification} />
+          </View>
+        </S.ContainerWrapper>
+      </S.Container>
+    </>
   );
 };
 
