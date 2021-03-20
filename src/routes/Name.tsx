@@ -20,6 +20,8 @@ const Name = ({route}: any) => {
         setToken(token);
         console.log('tokeeen', token);
       });
+
+    // messaging().subscribeToTopic('topic');
   }, []);
 
   return (
