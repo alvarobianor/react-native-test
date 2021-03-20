@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import {ScrollView} from 'react-native';
+import CustomButtom from './components/Button';
 
 export const Container = styled.View`
   height: 100%;
@@ -40,13 +41,18 @@ export const MiniContainer = styled.View`
   border-radius: 10px;
 `;
 
-export const H1 = styled.Text`
-  font-size: 50px;
+export const H5 = styled.Text`
+  font-size: 20px;
   text-align: center;
   color: white;
 `;
 export const H3 = styled.Text`
   font-size: 28px;
+  color: white;
+`;
+
+export const H2 = styled.Text`
+  font-size: 32px;
   color: white;
 `;
 
@@ -57,4 +63,8 @@ export const ButtonDetails = styled.View`
 export const But = styled.Button`
   margin-top: 20px;
   background-color: tomato;
+`;
+
+export const NotButton = styled(CustomButtom)`
+  width: 100%;
 `;

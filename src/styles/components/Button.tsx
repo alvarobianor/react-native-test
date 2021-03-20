@@ -4,12 +4,13 @@ import styled from 'styled-components/native';
 interface Props {
   onPress: () => void;
   title: string;
+  size?: number;
 }
 const ButtonContainer = styled.TouchableOpacity`
   margin-left: auto;
   align-items: center;
   justify-content: center;
-  width: 120px;
+  width: ${(props: {size: number}) => props.size || 120}px;
   height: 40px;
   padding: 12px;
   border-radius: 10px;
@@ -21,8 +22,8 @@ const ButtonText = styled.Text`
   color: #fff;
 `;
 
-const PressableButton = ({onPress, title}: Props) => (
-  <ButtonContainer onPress={onPress}>
+const PressableButton = ({onPress, title, size}: Props) => (
+  <ButtonContainer onPress={onPress} size={size}>
     <ButtonText>{title}</ButtonText>
   </ButtonContainer>
 );

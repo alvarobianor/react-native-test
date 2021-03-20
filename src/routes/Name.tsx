@@ -32,13 +32,17 @@ const Name = ({route}: any) => {
 
       <S.Container>
         <S.ContainerWrapper>
-          <S.H1>This page is for:</S.H1>
+          <S.H5>This page is for:</S.H5>
           <S.Padding />
 
-          <S.H3>{name}</S.H3>
+          <S.H2>{name}</S.H2>
           <View>
             <S.Padding />
-            <Button title="Notification" onPress={notification} />
+            <Button
+              size={180}
+              title="Send Notification"
+              onPress={notification}
+            />
           </View>
         </S.ContainerWrapper>
       </S.Container>

@@ -28,7 +28,7 @@ export default function App() {
     const unsubscribe = messaging().onMessage(async (remoteMessage) => {
       Alert.alert(
         remoteMessage.notification?.title as string,
-        JSON.stringify(remoteMessage.notification?.title),
+        remoteMessage.notification?.title,
       );
     });
 
